@@ -1,0 +1,349 @@
+
+h3, h4 {
+   margin: 0;
+}
+.flex {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+.flexRow {
+   display: flex;
+   flex-direction: row;
+}
+#aboutMe > div {
+   justify-content: space-between;
+   height: 65%;
+   margin-right: 3%;
+}
+
+.icon {
+   width: 35px;
+   height: 35px;
+}
+.blue-h:hover {
+   background: lightblue;
+}
+.orange-h:hover {
+   /* background: #eb8c00; */
+   background: yellow;
+}
+.border-rounded {
+   border-radius: 20%;
+}
+.border-circle {
+   border-radius: 100%;
+}
+html {
+      font-family: Abel;
+}
+
+body, div {
+   margin: 0;
+}
+p {
+   font-size: 1.3em;
+}
+button:focus {
+   outline: 0;
+}
+button {
+   border: 0;
+   border-radius: 0;
+   padding: 0;
+   background: white;
+}
+
+main {
+   overflow-y: scroll;
+   overflow-x: hidden;
+   height: 100vh;
+   scroll-behavior: smooth;
+   display: block;
+}
+#scrollContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+header {
+   position: fixed;
+   background: white;
+   z-index: 999;
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+#headerName {
+   width: 49%;
+   font-size: 2em;
+   text-decoration: none;
+   color: black;
+}
+nav {
+   display: flex;
+   width: 49%;
+   justify-content: flex-end;
+}
+nav a {
+   font-size: 1.2em;
+   text-decoration: none;
+   color: black;
+   margin: 1%;
+   margin-left: 5%;
+}
+.sans {
+   font-family: serif !important;
+}
+#intro {
+   height: 100vh;
+   width: 100vw;
+   background-position: center;
+   background-image: linear-gradient(to right, black 0%, darkgrey 30%, darkgrey 70%, black 100%),url(img/avatar.jpg);
+   background-size: auto;
+   background-repeat: repeat;
+   background-blend-mode: screen;
+   position: relative;
+}
+#introText {
+   width: 450px;
+   font-size: 3em;
+   position: absolute;
+   text-align: center;
+   left: 50%;
+   top: 45%;
+   transform: translate(-50%, -50%);
+}
+#introText a {
+   color: purple;
+   font-weight: 100;
+}
+#introText span {
+   font-family: Barrio;
+   color: black;
+}
+#aboutMe {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 70vh;
+   font-size: 1.2em;
+}
+.horizontalLine {
+   width: 80%;
+   border: 1px darkgrey solid;
+   margin-bottom: 3%;
+}
+.invisible {
+   opacity: 0;
+   transition: all 1s linear;
+   color:white;
+}
+.invisible:hover {
+   opacity: 100;
+}
+#aboutMeText {
+   margin: 2%;
+   width: 33vw;
+}
+#me {
+   border-radius: 100%;
+   width: 35vw;
+   height: 35vw;
+   max-width: 392px;
+   max-height: 392px;
+}
+h2, h3 {
+   text-align: center;
+   font-size: 3em;
+   font-family: Barrio;
+}
+
+.portfolioContainers p {
+   text-align: center;
+   margin: 10%;
+}
+#codePortfolio, #writingPortfolio  {
+   width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+h2 {
+   margin-top: -10vh;
+   padding-top: 10vh;
+}
+.sm-icon {
+   margin-right: 3px;
+   width: 20px;
+   height: 20px;
+}
+#codePortfolio p, #writingPortfolio p {
+   margin-bottom: 2%;
+}
+.small-spacer {
+   height: 15vh;
+}
+.spacer {
+   width: 100vw;
+   height: 100vh;
+}
+#contact {
+   margin-top: 20%;
+}
+#contactMe {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 60vh;
+   padding-left: 10%;
+   padding-right: 10%;
+   background-position: center;
+   background-image: linear-gradient(to right, black 0%, darkgrey 30%, darkgrey 70%, black 100%),
+      url(img/avatar2.jpg);
+   background-size: auto;
+   background-repeat: repeat;
+   background-blend-mode: screen;
+}
+#iconContainer {
+   width: 65%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+#contactMeText {
+   font-weight: bold;
+   margin: 1% 0 10% 0;
+   font-size: 1.9em;
+   width: 45%;
+   text-align: center;
+}
+
+#edhelper {
+   background-image: url("img/ring.png");
+}
+#checkers {
+   background-image: url("img/checkers.png");
+}
+#doodler {
+   background-image: url("img/doodler.png");
+}
+#prototype {
+   background-image: url("img/prototype.png");
+}
+#dungeonesse {
+   background-image: url("img/dungeonesse.jpg");
+}
+#sunclub {
+   background-image: url("img/sunclub.jpg");
+}
+#kelman {
+   background-image: url("img/kelman.jpg");
+}
+#xlGold {
+   background-image: url("img/gold.jpg");
+}
+.portfolioContainers {
+   -webkit-transition: background-color 2s ease-out;
+   -moz-transition: background-color 2s ease-out;
+   -o-transition: background-color 2s ease-out;
+   transition: background-color 2s ease-out;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 30vw;
+   height: 30vw;
+   margin: 1%;
+}
+.email {
+   text-decoration: none;
+   align-items: center;
+   color: black;
+   font-size: 1.2em;
+}
+.email img {
+   margin-left: 15px;
+}
+h4 {
+   color: lightblue;
+   font-size: 1.5em;
+}
+.portfolioContainers:hover {
+   background: black !important;
+}
+.relative {
+   position: relative;
+}
+.flex-end {
+   align-self: flex-end;
+}
+.l-full-w {
+   width: 100%;
+}
+.curve {
+   float: right;
+   -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+.learnMore {
+   text-align: center;
+   margin: 4%;
+   padding: 4%;
+   width: 33%;
+   flex-grow: 1;
+   font-size: 1.1em;
+   font-weight: bold;
+   background: lightblue;
+}
+.learnMore:hover {
+   background: white;
+}
+
+
+@media only screen and (max-width: 868px) {
+   body {
+      font-size: 0.8em;
+   }
+   .portfolioContainers {
+      width: 50vw;
+      height: 50vw;
+      font-size: 1.2em;
+   }
+   #aboutMe-sidebar {
+      display: none;
+   }
+}
+@media only screen and (max-width: 768px) {
+   body {
+      font-size: 0.65em;
+   }
+}
+@media only screen and (max-width: 425px) {
+   #aboutMeText {
+      width: 50vw;
+   }
+   #contactMeText {
+      font-size: 1.6em;
+   }
+   #introText {
+      width: 58vw;
+      font-size: 2.5em;
+   }
+   .portfolioContainers {
+      font-size: 0.8em;
+   }
+   #intro {
+      background-image:
+      linear-gradient(to top, black 0%, darkgrey 25%, darkgrey 75%, black 100%),
+      url(img/avatar.jpg);
+      background-size: 68vw;
+   }
+}
