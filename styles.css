@@ -106,7 +106,7 @@ nav a {
    height: 100vh;
    width: 100vw;
    background-position: center;
-   background-image: linear-gradient(to right, black 0%, darkgrey 30%, darkgrey 70%, black 100%),url(img/avatar.jpg);
+   background-image: linear-gradient(to right, black 0%, darkgrey 30%, darkgrey 70%, black 100%),url("img/avatar.jpg");
    background-size: auto;
    background-repeat: repeat;
    background-blend-mode: screen;
@@ -212,7 +212,7 @@ h2 {
    padding-right: 10%;
    background-position: center;
    background-image: linear-gradient(to right, black 0%, darkgrey 30%, darkgrey 70%, black 100%),
-      url(img/avatar2.jpg);
+      url("img/avatar2.jpg");
    background-size: auto;
    background-repeat: repeat;
    background-blend-mode: screen;
@@ -336,6 +336,9 @@ h4 {
    #aboutMeText {
       width: 50vw;
    }
+   .blurb {
+     font-size: 2em;
+   }
    #contactMeText {
       font-size: 1.6em;
    }
@@ -348,8 +351,7 @@ h4 {
    }
    #intro {
       background-image:
-      linear-gradient(to top, black 0%, darkgrey 25%, darkgrey 75%, black 100%),
-      url(img/avatar.jpg);
+      linear-gradient(to top, black 0%, darkgrey 25%, darkgrey 75%, black 100%),url("img/avatar.jpg");
       background-size: 68vw;
    }
 }
