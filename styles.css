@@ -344,18 +344,19 @@ h2 {
       font-size: 1.6em;
    }
    #introText {
-      width: 58vw;
-      font-size: 2.5em;
+     padding: 5%;
+     background: white;
+     opacity: 0.8;
+     width: 58vw;
+     font-size: 2.5em;
    }
    .portfolioContainers {
-      font-size: 1em;
-      width: 70vw;
-      height: 70vw;
+     font-size: 1em;
+     width: 70vw;
+     height: 70vw;
    }
    #intro {
-      background-image: url("img/avatar.jpg"),
-      linear-gradient(to top, black 0%, darkgrey 25%, darkgrey 75%, black 100%);
-      background-blend-mode: screen;
+      background-image: url("img/avatar.jpg");
       background-size: 80vw;
    }
 }
