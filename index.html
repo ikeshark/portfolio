@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header>
+   <header class="flexRow flexCenter">
       <a href="#scrollContainer" id="headerName">Michael Snyder Shank</a>
       <nav>
          <a href="#about">about</a>
@@ -20,7 +20,7 @@
       </nav>
    </header>
    <main>
-      <div id="scrollContainer">
+      <div id="scrollContainer" class="flex">
          <div id="intro">
             <h1 id="introText">
                Hi, I'm <span>Michael Snyder Shank</span>. <br /><br />
@@ -31,8 +31,8 @@
          <div class="small-spacer"></div>
          <h2 id="about">About Me</h2>
          <div class="horizontalLine"></div>
-         <div id="aboutMe">
-            <div id="aboutMe-sidebar" class="flex">
+         <div id="aboutMe" class="flexRow flexCenter flexWrap">
+            <div id="aboutMe-sidebar" class="flex flexSpaceAround">
                <a href="https://www.linkedin.com/in/michael-shank-3a2901b9">
                   <img class="icon blue-h" src="img/linkedin.svg" alt="linked in logo">
                </a>
@@ -56,8 +56,8 @@
          <div class="horizontalLine"></div>
          <div id="codePortfolio">
             <div id="edhelper" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex relative">
-                  <div class="l-full-w flex">
+               <div class="portfolioContainers invisible flex flexSpaceAround relative">
+                  <div class="l-full-w flex flexSpaceAround">
                      <h3>EDHELPER</h3>
                      <h4>Javascript</h4>
                   </div>
@@ -73,8 +73,8 @@
                </div>
             </div>
             <div id="checkers" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex relative">
-                  <div class="l-full-w flex">
+               <div class="portfolioContainers invisible flex flexSpaceAround relative">
+                  <div class="l-full-w flex flexSpaceAround">
                      <h3>CHECKERS</h3>
                      <h4>Javascript</h4>
                   </div>
@@ -90,7 +90,7 @@
                </div>
             </div>
             <div id="doodler" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex relative">
+               <div class="portfolioContainers invisible flex flexSpaceAround relative">
                   <div class="l-full-w flex">
                      <h3>PIXELated DOODLER</h3>
                      <h4>jQuery</h4>
@@ -112,8 +112,8 @@
          <div class="horizontalLine"></div>
          <div id="writingPortfolio">
             <div id="dungeonesse" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex relative">
-                  <div class="l-full-w flex">
+               <div class="portfolioContainers invisible flex flexSpaceAround relative">
+                  <div class="l-full-w flex flexSpaceAround">
                      <h3>Dungeonesse</h3>
                      <h4>Music Profile</h4>
                   </div>
@@ -126,8 +126,8 @@
                </div>
             </div>
             <div id="sunclub" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex relative">
-                  <div class="l-full-w flex">
+               <div class="portfolioContainers invisible flex flexSpaceAround relative">
+                  <div class="l-full-w flex flexSpaceAround">
                      <h3>Sun Club</h3>
                      <h4>Music Profile</h4>
                   </div>
@@ -140,8 +140,8 @@
                </div>
             </div>
             <div id="kelman" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex relative">
-                  <div class="l-full-w flex">
+               <div class="portfolioContainers invisible flex flexSpaceAround relative">
+                  <div class="l-full-w flex flexSpaceAround">
                      <h3>James Kelman</h3>
                      <h4>Book Review</h4>
                   </div>
@@ -155,7 +155,7 @@
             </div>
          </div>
          <h2 id="contact">Contact Me</h2>
-         <div id="contactMe">
+         <div id="contactMe" class="flex flexCenter">
             <p id="contactMeText">Looking for a freelancer or temp? Want to hire me for a regular gig?
             Direct any and all inquries, song requests, and manifestos
             to any of the contacts below.</p>

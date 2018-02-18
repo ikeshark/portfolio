@@ -30,22 +30,59 @@ main {
 /*        */
 
 .flex {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flexSpaceAround {
+  justify-content: space-around;
+}
+.flexWrap {
+  flex-wrap: wrap;
 }
 .flexRow {
-   display: flex;
-   flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .flexCenter {
   align-items: center;
   justify-content: center;
 }
 .flex-end {
-   align-self: flex-end;
+  align-self: flex-end;
 }
+
+nav {
+  display: flex;
+  width: 49%;
+  justify-content: flex-end;
+}
+
+#codePortfolio, #writingPortfolio  {
+   width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+#contactMe {
+   height: 60vh;
+   padding-left: 10%;
+   padding-right: 10%;
+   background-position: center;
+   background-image:   url("img/avatar2.jpg"),
+     linear-gradient(to right, black 0%, black 10%, lightgrey 35%, lightgrey 65%, black 90%, black 100%);
+   background-size: auto;
+   background-repeat: repeat;
+   background-blend-mode: screen;
+}
+#iconContainer {
+   width: 65%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
 
 .l-full-w {
    width: 100%;
@@ -61,6 +98,33 @@ main {
    height: 20px;
 }
 
+.spacer {
+   width: 100vw;
+   height: 100vh;
+}
+.small-spacer {
+   height: 15vh;
+}
+
+/* FIX */
+#aboutMe {
+   width: 100%;
+   height: 70vh;
+
+   font-size: 1.2em;
+}
+header {
+   position: fixed;
+   background: white;
+   z-index: 999;
+   width: 100%;
+   height: 10vh;
+}
+
+
+#contact {
+   margin-top: 20%;
+}
 #aboutMe > div {
    justify-content: space-between;
    height: 65%;
@@ -102,31 +166,11 @@ h4 {
 
 
 
-#scrollContainer {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-header {
-   position: fixed;
-   background: white;
-   z-index: 999;
-   width: 100%;
-   height: 10vh;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-}
 #headerName {
    width: 49%;
    font-size: 2em;
    text-decoration: none;
    color: black;
-}
-nav {
-   display: flex;
-   width: 49%;
-   justify-content: flex-end;
 }
 nav a {
    font-size: 1.2em;
@@ -162,15 +206,6 @@ nav a {
    font-family: Barrio;
    color: black;
 }
-#aboutMe {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-   width: 100%;
-   height: 70vh;
-   font-size: 1.2em;
-}
 .horizontalLine {
    width: 80%;
    border: 1px darkgrey solid;
@@ -193,18 +228,6 @@ h2, h3 {
    font-size: 3em;
    font-family: Barrio;
 }
-
-.portfolioContainers p {
-   text-align: center;
-   margin: 10%;
-}
-#codePortfolio, #writingPortfolio  {
-   width: 80%;
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-}
 h2 {
    margin-top: -10vh;
    padding-top: 10vh;
@@ -212,38 +235,12 @@ h2 {
 #codePortfolio p, #writingPortfolio p {
    margin-bottom: 2%;
 }
-.small-spacer {
-   height: 15vh;
+
+.portfolioContainers p {
+   text-align: center;
+   margin: 10%;
 }
-.spacer {
-   width: 100vw;
-   height: 100vh;
-}
-#contact {
-   margin-top: 20%;
-}
-#contactMe {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   width: 100%;
-   height: 60vh;
-   padding-left: 10%;
-   padding-right: 10%;
-   background-position: center;
-   background-image: linear-gradient(to right, black 0%, black 10%, lightgrey 35%, lightgrey 65%, black 90%, black 100%),
-      url("img/avatar2.jpg");
-   background-size: auto;
-   background-repeat: repeat;
-   background-blend-mode: screen;
-}
-#iconContainer {
-   width: 65%;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-}
+
 #contactMeText {
    font-weight: bold;
    margin: 1% 0 10% 0;
@@ -356,9 +353,8 @@ h2 {
       height: 70vw;
    }
    #intro {
-      background-image:
-      linear-gradient(to top, black 0%, darkgrey 25%, darkgrey 75%, black 100%),
-      url("img/avatar.jpg");
+      background-image: url("img/avatar.jpg"),
+      linear-gradient(to top, black 0%, darkgrey 25%, darkgrey 75%, black 100%);
       background-blend-mode: screen;
       background-size: 80vw;
    }
