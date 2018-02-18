@@ -350,8 +350,8 @@ h4 {
       font-size: 0.8em;
    }
    #intro {
-      background-image:
-      linear-gradient(to top, black 0%, darkgrey 25%, darkgrey 75%, black 100%),url("img/avatar.jpg");
-      background-size: 68vw;
+      /* background-image:
+      linear-gradient(to top, black 0%, darkgrey 25%, darkgrey 75%, black 100%),url("img/avatar.jpg"); */
+      background-size: 90vw;
    }
 }
