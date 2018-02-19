@@ -70,8 +70,8 @@ nav {
    padding-left: 10%;
    padding-right: 10%;
    background-position: center;
-   background-image:   url("img/avatar2.jpg"),
-     linear-gradient(to right, black 0%, black 10%, lightgrey 35%, lightgrey 65%, black 90%, black 100%);
+   background-image: url("img/avatar2.jpg"),
+     linear-gradient(to right, black 0%, black 10%, grey 35%, grey 65%, black 90%, black 100%);
    background-size: auto;
    background-repeat: repeat;
    background-blend-mode: screen;
@@ -183,7 +183,7 @@ nav a {
    height: 100vh;
    width: 100vw;
    background-position: center;
-   background-image: linear-gradient(to right, black 0%, darkgrey 30%, darkgrey 70%, black 100%),url("img/avatar.jpg");
+   background-image: linear-gradient(to right, black 0%, grey 30%, grey 70%, black 100%),url("img/avatar.jpg");
    background-size: auto;
    background-repeat: repeat;
    background-blend-mode: screen;
@@ -192,6 +192,9 @@ nav a {
 #introText {
    width: 450px;
    font-size: 3em;
+   padding: 5%;
+   background: white;
+   opacity: 0.8;
    position: absolute;
    text-align: center;
    left: 50%;
@@ -202,8 +205,11 @@ nav a {
    color: purple;
    font-weight: 100;
 }
+#introText a:hover {
+  color: blueviolet;
+}
 #introText span {
-   font-family: Barrio;
+   font-family: Barrio, serif;
    color: black;
 }
 .horizontalLine {
@@ -242,6 +248,9 @@ h2 {
 }
 
 #contactMeText {
+   padding: 5%;
+   background: white;
+   opacity: 0.8;
    font-weight: bold;
    margin: 1% 0 10% 0;
    font-size: 1.9em;
@@ -296,6 +305,8 @@ h2 {
 }
 .relative {
    position: relative;
+   top: -2.5%;
+   left: -2.5%;
 }
 .learnMore {
    text-align: center;
@@ -344,9 +355,6 @@ h2 {
       font-size: 1.6em;
    }
    #introText {
-     padding: 5%;
-     background: white;
-     opacity: 0.8;
      width: 58vw;
      font-size: 2.5em;
    }
