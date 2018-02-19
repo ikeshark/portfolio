@@ -163,7 +163,11 @@ h4 {
    color: lightblue;
    font-size: 1.5em;
 }
-
+.opaque-bg {
+  background: white;
+  opacity: 0.8;
+  padding: 5%;
+}
 
 
 #headerName {
@@ -350,9 +354,12 @@ h2 {
    .blurb {
      font-size: 2em;
    }
+   #contactMe {
+     background-image: url('img/avatar2.jpg');
+   }
    #contactMeText {
-      font-size: 1.6em;
-      width: 65%;
+     font-size: 1.6em;
+     width: 65%;
    }
    #iconContainer {
      width: 90%;
