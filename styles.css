@@ -66,7 +66,7 @@ nav {
    justify-content: center;
 }
 #contactMe {
-   height: 60vh;
+   height: 70vh;
    padding-left: 10%;
    padding-right: 10%;
    background-position: center;
@@ -252,7 +252,6 @@ h2 {
    background: white;
    opacity: 0.8;
    font-weight: bold;
-   margin: 1% 0 10% 0;
    font-size: 1.9em;
    width: 45%;
    text-align: center;
@@ -353,6 +352,10 @@ h2 {
    }
    #contactMeText {
       font-size: 1.6em;
+      width: 65%;
+   }
+   #iconContainer {
+     width: 90%;
    }
    #introText {
      width: 58vw;
