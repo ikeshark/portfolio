@@ -71,7 +71,7 @@ nav {
    padding-right: 10%;
    background-position: center;
    background-image: url("img/avatar2.jpg"),
-     linear-gradient(to right, black 0%, black 10%, grey 35%, grey 65%, black 90%, black 100%);
+     linear-gradient(to right, black 0%, lightgrey 25%, lightgrey 75%, black 100%);
    background-size: auto;
    background-repeat: repeat;
    background-blend-mode: screen;
@@ -248,9 +248,9 @@ h2 {
 }
 
 #contactMeText {
-   padding: 5%;
+   /* padding: 5%;
    background: white;
-   opacity: 0.8;
+   opacity: 0.8; */
    font-weight: bold;
    font-size: 1.9em;
    width: 45%;
