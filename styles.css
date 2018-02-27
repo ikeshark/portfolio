@@ -5,6 +5,16 @@
 html {
    font-family: Abel, sans-serif;
 }
+/* to compensate for fixed header */
+h2 {
+   margin-top: -10vh;
+   padding-top: 10vh;
+}
+h2, h3 {
+   text-align: center;
+   font-size: 3em;
+   font-family: Barrio;
+}
 h3, h4 {
    margin: 0;
 }
@@ -52,40 +62,45 @@ main {
   align-self: flex-end;
 }
 
-nav {
-  display: flex;
-  width: 49%;
-  justify-content: flex-end;
+.l-full-r {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
-
-#codePortfolio, #writingPortfolio  {
-   width: 80%;
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-}
-#contactMe {
-   height: 70vh;
-   padding-left: 10%;
-   padding-right: 10%;
-   background-position: center;
-   background-image: url("img/avatar2.jpg"),
-     linear-gradient(to right, black 0%, lightgrey 25%, lightgrey 75%, black 100%);
-   background-size: auto;
-   background-repeat: repeat;
-   background-blend-mode: screen;
-}
-#iconContainer {
-   width: 65%;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-}
-
-
 .l-full-w {
    width: 100%;
+}
+.l-80w {
+  width: 80%;
+}
+.l-49w {
+  width: 49%;
+}
+.l-45w {
+  width: 45%;
+}
+.l-15vh {
+   height: 15vh;
+}
+
+.l-left-m-px {
+  margin-left: 15px;
+}
+.l-left-m-pct {
+  margin-left: 6%;
+}
+.l-30vw-m {
+  width: 30vw;
+  height: 30vw;
+  margin: 1vw;
+}
+.l-padding {
+  padding: 5%;
+}
+.l-70vh-p {
+  height: 70vh;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .icon {
@@ -98,37 +113,40 @@ nav {
    height: 20px;
 }
 
-.spacer {
-   width: 100vw;
-   height: 100vh;
-}
-.small-spacer {
-   height: 15vh;
+.relative {
+   position: relative;
+   top: -2.5%;
+   left: -2.5%;
 }
 
-/* FIX */
-#aboutMe {
-   width: 100%;
-   height: 70vh;
-
-   font-size: 1.2em;
+.horizontalLine {
+   width: 80%;
+   border: 1px darkgrey solid;
+   margin-bottom: 3%;
 }
+
+
 header {
    position: fixed;
-   background: white;
    z-index: 999;
    width: 100%;
    height: 10vh;
 }
-
-
-#contact {
-   margin-top: 20%;
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 49%;
 }
-#aboutMe > div {
-   justify-content: space-between;
+#aboutMe {
+   width: 100%;
+   height: 70vh;
+}
+#aboutMeSidebar {
    height: 65%;
-   margin-right: 3%;
+   margin-left: 5%;
+}
+.curve:nth-child(odd) {
+  margin-left: -6vw;
 }
 #me {
    width: 35vw;
@@ -136,129 +154,130 @@ header {
    max-width: 392px;
    max-height: 392px;
 }
+#iconContainer {
+   width: 65%;
+}
+#introText {
+   width: 450px;
+   padding: 5%;
+   position: absolute;
+   left: 50%;
+   top: 45%;
+   transform: translate(-50%, -50%);
+}
+#aboutMeText {
+   margin: 2%;
+   width: 33vw;
+}
+.l-learnMore {
+  margin: 4%;
+  padding: 1em;
+  width: 33%;
+  flex-grow: 1;
+}
+#contact {
+   margin-top: 20%;
+}
+
 
 /*      */
 /* Skin */
 /*      */
 
+.white-bg {
+  background: white;
+}
 .blue-h:hover {
    background: lightblue;
 }
 .yellow-h:hover {
    background: yellow;
 }
+
 .border-rounded {
    border-radius: 20%;
 }
 .border-circle {
    border-radius: 100%;
 }
+
+.font-lg {
+  font-size: 1.5em;
+}
+.blurb {
+  text-align: center;
+  font-size: 1.3em;
+}
 .sans {
-   font-family: serif !important;
+  font-family: sans-serif !important;
 }
-p {
-   font-size: 1.3em;
+.portfolioContainers {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-h4 {
-   color: lightblue;
-   font-size: 1.5em;
-}
+
 .opaque-bg {
   background: white;
   opacity: 0.8;
-  padding: 5%;
 }
 
-
+.learnMore {
+  text-align: center;
+  font-size: 1.1em;
+  background: lightblue;
+}
 #headerName {
-   width: 49%;
-   font-size: 2em;
-   text-decoration: none;
-   color: black;
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
 }
 nav a {
    font-size: 1.2em;
    text-decoration: none;
    color: black;
-   margin: 1%;
-   margin-left: 5%;
 }
 #intro {
-   height: 100vh;
-   width: 100vw;
    background-position: center;
    background-image: linear-gradient(to right, black 0%, grey 30%, grey 70%, black 100%),url("img/avatar.jpg");
    background-size: auto;
    background-repeat: repeat;
    background-blend-mode: screen;
-   position: relative;
 }
 #introText {
-   width: 450px;
-   font-size: 3em;
-   padding: 5%;
-   background: white;
-   opacity: 0.8;
-   position: absolute;
-   text-align: center;
-   left: 50%;
-   top: 45%;
-   transform: translate(-50%, -50%);
+  font-size: 3em;
+  text-align: center;
 }
 #introText a {
    color: purple;
    font-weight: 100;
 }
-#introText a:hover {
-  color: blueviolet;
-}
 #introText span {
    font-family: Barrio, serif;
    color: black;
 }
-.horizontalLine {
-   width: 80%;
-   border: 1px darkgrey solid;
-   margin-bottom: 3%;
+h4 {
+  color: lightblue;
+  font-size: 1.5em;
 }
-.invisible {
-   opacity: 0;
-   /* transition: all 1s linear; */
-   color:white;
+#contactMe {
+   background-position: center;
+   background-image: url("img/avatar2.jpg"),
+     linear-gradient(to right, black 0%, grey 25%, grey 75%, black 100%);
+   background-size: auto;
+   background-repeat: repeat;
+   background-blend-mode: screen;
 }
-.invisible:hover {
-   opacity: 100;
-}
-#aboutMeText {
-   margin: 2%;
-   width: 33vw;
-}
-h2, h3 {
-   text-align: center;
-   font-size: 3em;
-   font-family: Barrio;
-}
-h2 {
-   margin-top: -10vh;
-   padding-top: 10vh;
-}
-#codePortfolio p, #writingPortfolio p {
-   margin-bottom: 2%;
-}
-
-.portfolioContainers p {
-   text-align: center;
-   margin: 10%;
-}
-
 #contactMeText {
-   /* padding: 5%;
-   background: white;
-   opacity: 0.8; */
    font-weight: bold;
    font-size: 1.9em;
-   width: 45%;
    text-align: center;
+}
+.email {
+  text-decoration: none;
+  align-items: center;
+  color: black;
+  font-size: 1.2em;
 }
 
 #edhelper {
@@ -285,44 +304,24 @@ h2 {
 #xlGold {
    background-image: url("img/gold.jpg");
 }
-.portfolioContainers {
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   width: 30vw;
-   height: 30vw;
-   margin: 1vw;
-}
-.email {
-   text-decoration: none;
-   align-items: center;
-   color: black;
-   font-size: 1.2em;
-}
-.email img {
-   margin-left: 15px;
-}
 
-.portfolioContainers:hover {
-   background: black !important;
-}
-.relative {
-   position: relative;
-   top: -2.5%;
-   left: -2.5%;
-}
-.learnMore {
-   text-align: center;
-   margin: 4%;
-   padding: 1em;
-   width: 33%;
-   flex-grow: 1;
-   font-size: 1.1em;
-   background: lightblue;
+#introText a:hover {
+  color: blueviolet;
 }
 .learnMore:hover {
    background: white;
 }
+.portfolioContainers:hover {
+   background: black !important;
+}
+.invisible {
+   opacity: 0;
+   color: white;
+}
+.invisible:hover {
+   opacity: 100;
+}
+
 
 /* Media Queries */
 

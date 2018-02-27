@@ -5,149 +5,151 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Michael Snyder Shank | Web developer, writer</title>
+   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header class="flexRow flexCenter">
-      <a href="#scrollContainer" id="headerName">Michael Snyder Shank</a>
+   <header class="flexRow flexCenter white-bg">
+      <a id="headerName" class="l-49w" href="#scrollContainer">Michael Snyder Shank</a>
       <nav>
-         <a href="#about">about</a>
-         <a href="#code">coding</a>
-         <a href="#writing">writing</a>
-         <a href="#contact">contact</a>
+         <a class="l-left-m-pct" href="#about">about</a>
+         <a class="l-left-m-pct" href="#code">coding</a>
+         <a class="l-left-m-pct" href="#writing">writing</a>
+         <a class="l-left-m-pct" href="#contact">contact</a>
       </nav>
    </header>
    <main>
       <div id="scrollContainer" class="flex">
-         <div id="intro">
-            <h1 id="introText">
+         <div id="intro" class="l-full-r">
+            <h1 id="introText" class="opaque-bg">
                Hi, I'm <span>Michael Snyder Shank</span>. <br /><br />
                I'm a <a href="#code">web developer</a> <span class="sans">&amp;</span>
                <a href="#writing">writer</a>.
             </h1>
          </div>
-         <div class="small-spacer"></div>
+         <div class="l-15vh"></div>
          <h2 id="about">About Me</h2>
          <div class="horizontalLine"></div>
          <div id="aboutMe" class="flexRow flexCenter flexWrap">
-            <div id="aboutMe-sidebar" class="flex flexSpaceAround">
-               <a href="https://www.linkedin.com/in/michael-shank-3a2901b9">
-                  <img class="icon blue-h" src="img/linkedin.svg" alt="linked in logo">
-               </a>
-               <a href="https://www.instagram.com/ikeshark/">
-                  <img class="icon blue-h border-rounded" src="img/instagram.png" alt="instagram logo">
-               </a>
-               <a href="https://github.com/ikeshark">
-                  <img class="icon blue-h border-circle" src="img/github.png" alt="github logo">
-               </a>
-            </div>
-            <p id="aboutMeText">
+            <p id="aboutMeText" class="font-lg">
                I'm a self taught coder, comfortable with Javascript, CSS, and HTML.
                I'm also familiar with jQuery and ReactJS. Always eager to continue my education, I'm also learning the basics of Ruby and Python.
                <br /><br />I'm a quick learner with an appetite for education. As a writer, I'm obessed with narrative and wordplay.
-               As a <a href="http://ikeshark.bandcamp.com">musician</a> I strive to create miniature sonic worlds, both alien and familiar.
+               As a <a target="_blank" href="http://ikeshark.bandcamp.com">musician</a> I strive to create miniature sonic worlds, both alien and familiar.
             </p>
             <img id="me" class="border-circle" src="img/me.jpg" alt="The reluctant smile of MS Shank AKA Ike Shark">
+            <div id="aboutMeSidebar" class="flex flexSpaceAround">
+               <a target="_blank" class="curve" href="https://www.linkedin.com/in/michael-shank-3a2901b9">
+                  <img class="icon blue-h" src="img/linkedin.svg" alt="linked in logo">
+               </a>
+               <a target="_blank" class="curve" href="https://www.instagram.com/ikeshark/">
+                  <img class="icon blue-h border-rounded" src="img/instagram.png" alt="instagram logo">
+               </a>
+               <a target="_blank" class="curve" href="https://github.com/ikeshark">
+                  <img class="icon blue-h border-circle" src="img/github.png" alt="github logo">
+               </a>
+            </div>
          </div>
-         <div class="small-spacer"></div>
+         <div class="l-15vh"></div>
          <h2 id="code">Coding</h2>
          <div class="horizontalLine"></div>
-         <div id="codePortfolio">
-            <div id="edhelper" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex flexSpaceAround relative">
+         <div class="flexRow flexWrap flexCenter l-80w">
+            <div id="edhelper" class="portfolioContainers l-30vw-m">
+               <div class="portfolioContainers l-30vw-m invisible flex flexSpaceAround relative">
                   <div class="l-full-w flex flexSpaceAround">
                      <h3>EDHELPER</h3>
                      <h4>Javascript</h4>
                   </div>
                   <p class="blurb">Web app for a popular Magic: the Gathering format</p>
                   <div class="flexRow l-full-w">
-                     <a href="https://github.com/ikeshark/edhelper" class="learnMore flexRow flexCenter">
+                     <a target="_blank" href="https://github.com/ikeshark/edhelper" class="learnMore l-learnMore flexRow flexCenter">
                         <img class="sm-icon" src="img/github.png" alt="github logo">Learn More
                      </a>
-                     <a href="https://ikeshark.github.io/edhelper/" class="learnMore flexRow flexCenter">
+                     <a target="_blank" href="https://ikeshark.github.io/edhelper/" class="learnMore l-learnMore flexRow flexCenter">
                         Explore
                      </a>
                   </div>
                </div>
             </div>
-            <div id="checkers" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex flexSpaceAround relative">
+            <div id="checkers" class="portfolioContainers l-30vw-m">
+               <div class="portfolioContainers l-30vw-m invisible flex flexSpaceAround relative">
                   <div class="l-full-w flex flexSpaceAround">
                      <h3>CHECKERS</h3>
                      <h4>Javascript</h4>
                   </div>
                   <p class="blurb">Mobile-capable two-player checkers game</p>
                   <div class="flexRow l-full-w">
-                     <a href="https://github.com/ikeshark/checkers" class="learnMore flexRow flexCenter">
+                     <a target="_blank" href="https://github.com/ikeshark/checkers" class="learnMore l-learnMore flexRow flexCenter">
                         <img class="sm-icon" src="img/github.png" alt="github logo">Learn More
                      </a>
-                     <a href="https://ikeshark.github.io/checkers" class="learnMore flexRow flexCenter">
+                     <a target="_blank" href="https://ikeshark.github.io/checkers" class="learnMore l-learnMore flexRow flexCenter">
                         Explore
                      </a>
                   </div>
                </div>
             </div>
-            <div id="doodler" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex flexSpaceAround relative">
+            <div id="doodler" class="portfolioContainers l-30vw-m">
+               <div class="portfolioContainers l-30vw-m invisible flex flexSpaceAround relative">
                   <div class="l-full-w flex">
                      <h3>PIXELated DOODLER</h3>
                      <h4>jQuery</h4>
                   </div>
                   <p class="blurb">Doodle on hover</p>
                   <div class="flexRow l-full-w">
-                     <a href="https://github.com/ikeshark/pixelated-doodler" class="learnMore flexRow flexCenter">
+                     <a target="_blank" href="https://github.com/ikeshark/pixelated-doodler" class="learnMore l-learnMore flexRow flexCenter">
                         <img class="sm-icon" src="img/github.png" alt="github logo">Learn More
                      </a>
-                     <a href="https://ikeshark.github.io/pixelated-doodler" class="learnMore flexRow flexCenter">
+                     <a target="_blank" href="https://ikeshark.github.io/pixelated-doodler" class="learnMore l-learnMore flexRow flexCenter">
                         Explore
                      </a>
                   </div>
                </div>
             </div>
          </div>
-         <div class="small-spacer"></div>
+         <div class="l-15vh"></div>
          <h2 id="writing">Writing</h2>
          <div class="horizontalLine"></div>
-         <div id="writingPortfolio">
-            <div id="dungeonesse" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex flexSpaceAround relative">
+         <div class="flexRow flexWrap flexCenter l-80w">
+            <div id="dungeonesse" class="portfolioContainers l-30vw-m">
+               <div class="portfolioContainers l-30vw-m invisible flex flexSpaceAround relative">
                   <div class="l-full-w flex flexSpaceAround">
                      <h3>Dungeonesse</h3>
                      <h4>Music Profile</h4>
                   </div>
                   <p class="blurb">Two Baltimore indie rockers get together to remember 90s pop</p>
                   <div class="flexRow l-full-w">
-                     <a class="learnMore" href="http://www.citypaper.com/music/bcp-cms-1-1485333-migrated-story-cp-20130508-music-20130508-story.html">
+                     <a target="_blank" class="learnMore l-learnMore" href="http://www.citypaper.com/music/bcp-cms-1-1485333-migrated-story-cp-20130508-music-20130508-story.html">
                        Explore
                      </a>
                   </div>
                </div>
             </div>
-            <div id="sunclub" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex flexSpaceAround relative">
+            <div id="sunclub" class="portfolioContainers l-30vw-m">
+               <div class="portfolioContainers l-30vw-m invisible flex flexSpaceAround relative">
                   <div class="l-full-w flex flexSpaceAround">
                      <h3>Sun Club</h3>
                      <h4>Music Profile</h4>
                   </div>
                   <p class="blurb">Five longtime friends follow their dream, making exuberant indie-rock</p>
                   <div class="flexRow l-full-w">
-                     <a class="learnMore" href="http://www.citypaper.com/music/http://www.citypaper.com/bcp-cms-1-1636273-migrated-story-cp-20140219-music-20140219-story.html">
+                     <a target="_blank" class="learnMore l-learnMore" href="http://www.citypaper.com/music/http://www.citypaper.com/bcp-cms-1-1636273-migrated-story-cp-20140219-music-20140219-story.html">
                        Explore
                      </a>
                   </div>
                </div>
             </div>
-            <div id="kelman" class="portfolioContainers">
-               <div class="portfolioContainers invisible flex flexSpaceAround relative">
+            <div id="kelman" class="portfolioContainers l-30vw-m">
+               <div class="portfolioContainers l-30vw-m invisible flex flexSpaceAround relative">
                   <div class="l-full-w flex flexSpaceAround">
                      <h3>James Kelman</h3>
                      <h4>Book Review</h4>
                   </div>
                   <p class="blurb">A review of Kelman's novel <cite>Moe Said She Was Quirky</cite></p>
                   <div class="flexRow l-full-w">
-                     <a class="learnMore" href="http://www.citypaper.com/bcp-cms-1-1481608-migrated-story-cp-20130501-books-20130501-story.html">
+                     <a target="_blank" class="learnMore l-learnMore" href="http://www.citypaper.com/bcp-cms-1-1481608-migrated-story-cp-20130501-books-20130501-story.html">
                        Explore
                      </a>
                   </div>
@@ -155,24 +157,24 @@
             </div>
          </div>
          <h2 id="contact">Contact Me</h2>
-         <div id="contactMe" class="flex flexCenter">
-           <div class="opaque-bg flex flexCenter">
-             <p id="contactMeText">Looking for a freelancer or temp? Want to hire me for a regular gig?
+         <div id="contactMe" class="l-70vh-p flex flexCenter">
+           <div class="l-padding opaque-bg flex flexCenter">
+             <p id="contactMeText" class="l-45w">Looking for a freelancer or temp? Want to hire me for a regular gig?
              Direct any and all inquries, song requests, and manifestos
              to any of the contacts below.</p>
-             <div id="iconContainer">
-                <a href="https://www.linkedin.com/in/michael-shank-3a2901b9">
+             <div id="iconContainer" class="flexRow flexSpaceAround">
+                <a target="_blank" href="https://www.linkedin.com/in/michael-shank-3a2901b9">
                    <img class="icon yellow-h" src="img/linkedin.svg" alt="linked in logo">
                 </a>
-                <a href="https://www.instagram.com/ikeshark/">
+                <a target="_blank" href="https://www.instagram.com/ikeshark/">
                    <img class="icon yellow-h border-rounded" src="img/instagram.png" alt="instagram logo">
                 </a>
-                <a href="https://github.com/ikeshark">
+                <a target="_blank" href="https://github.com/ikeshark">
                    <img class="icon yellow-h border-circle" src="img/github.png" alt="github logo">
                 </a>
                 <a class="email flexRow blue-h" href="mailto:mike.shank@gmail.com">
                    email:
-                   <img class="icon" src="img/mail.png" alt="email icon">
+                   <img class="icon l-left-m-px" src="img/mail.png" alt="email icon">
                 </a>
              </div>
 
