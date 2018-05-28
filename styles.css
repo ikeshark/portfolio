@@ -304,6 +304,15 @@ h4 {
 #xlGold {
    background-image: url("img/gold.jpg");
 }
+#currentWork {
+  background-image: url("https://i1.sndcdn.com/avatars-000001197575-ay59wj-t500x500.jpg");
+}
+#soloAlbums {
+  background-image: url("https://f4.bcbits.com/img/a2607752967_16.jpg");
+}
+#barnyardSharks {
+  background-image: url("https://f4.bcbits.com/img/a0984155272_2.jpg");
+}
 
 #introText a:hover {
   color: blueviolet;
@@ -371,6 +380,9 @@ h4 {
      font-size: 1em;
      width: 70vw;
      height: 70vw;
+   }
+   .hide-for-small {
+     display: none;
    }
    #intro {
       background-image: url("img/avatar.jpg");
