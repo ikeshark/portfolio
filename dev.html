@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Michael Snyder Shank</title>
+  <link href="https://fonts.googleapis.com/css?family=Barrio|Abel" rel="stylesheet">
+  <link rel="stylesheet" href="styles.min.css">
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+
+  <script src="https://kit.fontawesome.com/a0a6bb5434.js"></script>
+</head>
+
+<body class="color">
+
+  <header class="w-full fixed flex flex-wrap items-center text-center p-2 bg z-10 shadow-b-color-o3">
+    <h1 id="darkModeToggle" class="md:block relative font-sans text-2xl hover:animation-underline hover:color4 w-full md:w-auto">
+      Michael <span class="hidden md:inline">Snyder</span> Shank
+      <button
+        id="dayOrNight"
+        aria-label="dark mode toggle"
+        class="outline-currentColor hidden md:block absolute top-0 right-0 -mr-5 mt-2 h-4 w-4 rounded-full day"
+      ></button>
+    </h1>
+
+    <nav class="w-full md:w-auto md:ml-auto">
+      <ul class="flex  justify-end">
+        <li class="mr-2 ml-4 md:mx-3 flex-grow hover:animation-underline">
+           <a aria-label="about me" href="#about" class="outline-currentColor">about</a>
+         </li>
+        <li class="mx-2 md:mx-3 flex-grow hover:animation-underline">
+          <a href="#coding" class="outline-currentColor">coding</a>
+        </li>
+        <li class="mx-2 md:mx-3 flex-grow hover:animation-underline">
+          <a href="#music" class="outline-currentColor">music</a>
+        </li>
+        <li class="mr-4 ml-2 md:mx-3 lg:mr-6 flex-grow hover:animation-underline">
+          <a href="#contact" class="outline-currentColor">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div id="scrollWrapper" class="bg h-screen overflow-y-scroll overflow-x-hidden">
+    <div>  <!-- inner scroll wrapper -->
+
+      <!-- hero / intro -->
+      <section id="intro" class="relative h-screen pt-32 min-h-666 bg-center bg-img">
+        <div id="introInner"
+          class="relative w-7/8 lg:w-3/5 mx-auto flex flex-col justify-center p-5 shadow-color2 text-center bg-o8 max-w-555">
+
+          <h2 class="text-4xl mb-3">
+            Hi, I'm
+            <span class="font-barrio text-4xl">MICHAEL <br>SNYDER SHANK</span>
+          </h2>
+          <p class="text-3xl md:text-4xl">
+            I’m a <a class="outline-currentColor underline color2 hover:color3" href="#coding">web developer</a> <br class="hidden sm:block">
+            and a <a class="outline-currentColor underline color2 hover:color3" href="#music">musician</a>.
+          </p>
+        </div>
+      </section>
+      <main id="app" class="max-w-xl mx-auto text-center">
+
+        <!-- about me -->
+        <section id="about">
+          <h2 class="pt-16 -mt-8 mb-4 font-barrio text-4xl underline">ABOUT ME</h2>
+          <div class="flex px-4 max-w-755 mx-auto">
+            <div class="w-5/6 text-left">
+              <img id="mePic"
+                class="float-right -mr-12 sm:mr-0 w-3/4 sm:w-auto rounded-full shadow-grey"
+                src="img/me.jpg"
+                width="318"
+                alt="picture of Michael Shank"
+              />
+              <p class="mb-4 text-lg">I’m a front-end web developer interested in animations, accessibility, and web apps.</p>
+              <p class="text-lg">I’m a quick learner with an appetite for education. As a <a class="outline-currentColor underline" href="#music">musician</a> I strive to create miniature sonic worlds, both alien and familiar.</p>
+            </div>
+            <aside id="aboutMeSidebar" class="hidden sm:block text-lg ml-2">
+               <a aria-label="my codepen" target="_blank" class="outline-currentColor block hover:color4 -ml-8" href="https://codepen.io/ikeshark/">
+                 <i class="fab fa-codepen fa-lg" aria-hidden="true"></i>
+               </a>
+               <a aria-label="my resume" target="_blank" class="outline-currentColor block hover:color4 my-12 ml-4" href="https://www.instagram.com/ikeshark/">
+                 <i class="far fa-file-pdf fa-lg" aria-hidden="true"></i>
+               </a>
+               <a aria-label="my github" target="_blank" class="outline-currentColor block hover:color4 -ml-8" href="https://github.com/ikeshark">
+                 <i class="fab fa-github fa-lg" aria-hidden="true"></i>
+               </a>
+            </aside>
+          </div>
+        </section>
+
+        <!-- coding -->
+        <section id="coding" class="grid gap-md">
+          <h2 class="pt-16 font-barrio text-4xl underline">CODING</h2>
+
+          <portfolio-item
+            bg="img/sharkApp.jpg"
+            heading="BAND APP"
+            subhead="React | Firebase"
+            blurb="React app designed for my band the Barnyard Sharks. Allows band members to share lyrics, song ideas, and set lists"
+          >
+            <links-code
+              link1="https://github.com/ikeshark/barnyard-sharks"
+              link2="https://ikeshark.github.io/barnyard-sharks"
+              label1="Code repository for Band App"
+              label2="Band App"
+            ></links-code>
+          </portfolio-item>
+
+          <portfolio-item
+            bg="img/teevee2.jpg"
+            heading="teevee"
+            subhead="Tone.js | CSS"
+            blurb="Title frames and theme songs from TV shows such as X-Files and Twin Peaks"
+          >
+            <links-code
+              link1="https://github.com/ikeshark/teevee"
+              link2="https://ikeshark.github.io/teevee"
+              label1="Code repository for Teevee"
+              label2="Teevee"
+            ></links-code>
+          </portfolio-item>
+
+          <portfolio-item
+            bg="img/letitsnow.jpg"
+            heading="let it snow"
+            subhead="CSS animations"
+            blurb="Interactive celebration of the snowy season"
+          >
+            <links-code
+              link1="https://github.com/ikeshark/let-it-snow"
+              link2="https://ikeshark.github.io/let-it-snow"
+              label1="Code repository for Let it Snow"
+              label2="Let it Snow"
+            ></links-code>
+          </portfolio-item>
+
+          <portfolio-item
+            bg="img/edHelper.jpg"
+            heading="EDHELPER"
+            subhead="JavaScript"
+            blurb="Web app to help keep track of complicated game states in a popular Magic: the Gathering format"
+          >
+            <links-code
+              link1="https://github.com/ikeshark/edhelper"
+              link2="https://ikeshark.github.io/edhelper"
+              label1="Code repository for Edhelper"
+              label2="Edhelper"
+            ></links-code>
+          </portfolio-item>
+
+          <portfolio-item
+            bg="img/checkers.jpg"
+            heading="CHECKERS"
+            subhead="JavaScript"
+            blurb="Two-player checkers game"
+          >
+            <links-code
+              link1="https://github.com/ikeshark/checkers"
+              link2="https://ikeshark.github.io/checkers"
+              label1="Code repository for checkers"
+              label2="Checkers"
+            ></links-code>
+          </portfolio-item>
+
+          <portfolio-item
+            bg="img/doodler.jpg"
+            heading="PIXELATED DOODLER"
+            subhead="jQuery"
+            blurb="My take on the ‘hover to doodle’ exercise; it shows I know jQuery which is still a thing, hey"
+          >
+            <links-code
+              link1="https://github.com/ikeshark/pixelated-doodler"
+              link2="https://ikeshark.github.io/pixelated-doodler"
+              label1="Code repository for Pixedlated Doodler"
+              label2="Pixedlated Doodler"
+            ></links-code>
+          </portfolio-item>
+        </section>
+
+        <section id="music" class="grid gap-md">
+          <h2 class="pt-16 font-barrio text-4xl underline">MUSIC</h2>
+
+          <portfolio-item
+            bg="img/solo.jpg"
+            heading="CURRENT SOLO WORK"
+            subhead="Singles and Demos"
+            blurb="In 2006, Ike Shark was born a tourist onboard a Panamanian bus. For my latest work, visit my soundcloud"
+          >
+            <links-other
+              icon="fab fa-soundcloud"
+              link="https://soundcloud.com/ikeshark"
+              label="Listen to Ike Shark singles and demos"
+            ></links-other>
+          </portfolio-item>
+
+          <portfolio-item
+            bg="img/albums.jpg"
+            heading="Solo Albums"
+            subhead="Albums & EPs"
+            blurb="Old albums, both short and long, ranging from ambient to psychedelia to downtempo"
+          >
+            <links-other
+              icon="fab fa-bandcamp"
+              link="https://ikeshark.bandcamp.com"
+              label="Listen to Ike Shark albums"
+            ></links-other>
+          </portfolio-item>
+
+          <portfolio-item
+            bg="img/sharks.jpg"
+            heading="BARNYARD SHARKS"
+            subhead="Albums & EPs"
+            blurb="We’re the Barnyard Sharks and we’re coming for you!"
+          >
+            <links-other
+              icon="fab fa-bandcamp"
+              link="https://barnyardsharks.bandcamp.com"
+              label="Listen to Barnyard Sharks"
+            ></links-other>
+          </portfolio-item>
+
+          <portfolio-item
+            bg="img/wutbf.jpg"
+            heading="We Used to be Family"
+            subhead="Album"
+            blurb="Chamber core ensemble. Bittersweet, brutal, often silly"
+          >
+            <links-other
+              icon="fab fa-bandcamp"
+              link="https://weusedtobefamily.bandcamp.com/"
+              label="Listen to We Used to Be Family"
+            ></links-other>
+          </portfolio-item>
+
+          <portfolio-item
+            bg="img/leafhouse2.jpg"
+            heading="Leaf House"
+            subhead="Microshow"
+            blurb="Noise pop: frenetic drumming, sweet singing, chiming discordance"
+          >
+            <links-other
+              icon=""
+              link="https://mobtownstudios.com/records/leaf-house-microshow/"
+              label="Listen to Leaf House"
+            ></links-other>
+          </portfolio-item>
+
+          <portfolio-item
+            bg="img/impmach.jpg"
+            heading="impatience Machine"
+            subhead="Album"
+            blurb="Arty nonsense. I play bass!"
+          >
+            <links-other
+              icon="fab fa-bandcamp"
+              link="https://impatiencemachine.bandcamp.com/"
+              label="Listen to Impatience Machine"
+            ></links-other>
+          </portfolio-item>
+
+        </section>
+      </main>
+
+      <div class="pt-30vh"></div>
+
+      <section id="contact" class="relative h-full py-16 bg-img">
+        <div class="relative w-full md:w-3/5 mx-auto p-8 bg-o8 max-w-555 shadow-color2 text-center">
+          <h2 class="font-barrio text-4xl underline">CONTACT ME</h2>
+          <p class="mb-4 text-xl">
+            Looking for a freelance coder or musical collaborator?
+            Direct all inquries to any of the contacts below.
+          </p>
+          <address class="flex justify-around w-3/4 mx-auto">
+            <a
+              target="_blank"
+              class="outline-currentColor hover:color4"
+              href="https://www.linkedin.com/in/michael-shank-3a2901b9"
+              aria-label="My LinkedIn"
+            >
+              <i class="fab fa-linkedin-in fa-lg" aria-hidden="true"></i>
+            </a>
+            <a
+              target="_blank"
+              class="outline-currentColor hover:color4"
+              href="https://www.instagram.com/ikeshark/"
+              aria-label="My resume"
+            >
+              <i class="far fa-file-pdf fa-lg" aria-hidden="true"></i>
+            </a>
+            <a
+              class="outline-currentColor
+              hover:color4"
+              href="mailto:mike.shank@gmail.com"
+              aria-label="My email"
+            >
+              <i class="fas fa-envelope-square fa-lg" aria-hidden="true"></i>
+            </a>
+          </address>
+      </div>
+
+      </section> <!-- contact me -->
+    </div>
+  </div> <!-- scroll container -->
+
+  <div id="bottomBar" class="hide-bottomBar fixed bottom-0 left-0 w-full p-2 flex items-center justify-between bg shadow-t-color-o3">
+    <iframe height="60" width="290" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/832155290&color=%23160906&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <button class="h-8 w-8 border-2 border-currentColor rounded-full">&times;</button>
+  </div>
+
+  <script>
+    Vue.component('portfolio-item', {
+      props: ['id', 'heading', 'subhead', 'blurb', 'bg'],
+      template: `
+        <div
+          :style="'background-image:url(' + bg + ')'"
+          class="shadow-color-o3 text-center bg-cover bg-center"
+        >
+          <div class="hiddenLinkWrapper flex flex-col justify-between opacity-0 hover:opacity-100 h-full p-3 bg-invert">
+            <div>
+              <h3 class="color-invert font-barrio text-4xl leading-none">{{ heading }}</h3>
+              <h4 class="color-invert2 -mt-1 text-xl">{{ subhead }}</h4>
+            </div>
+            <p class="color-invert">{{ blurb }}</p>
+            <slot></slot>
+          </div>
+        </div>
+      `
+    });
+
+    Vue.component('links-code', {
+      props: ['label1', 'label2', 'link1', 'link2'],
+      template: `
+        <div class="flex justify-between">
+          <a
+            class="hiddenLink outline-color3 bg-invert2 hover:filter flex-grow p-3 mr-4 text-sm"
+            :href="link1"
+            :aria-label="label1"
+          >
+            <i aria-hidden="true" class="fab fa-github fa-lg"></i>
+            <span class="underline">Learn More</span>
+          </a>
+          <a
+            class="hiddenLink outline-color3 bg-invert2 hover:filter p-3 flex-grow text-sm"
+            :href="link2"
+            :aria-label="label2"
+          >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            <span class="underline">Explore</span>
+          </a>
+        </div>
+      `
+    });
+    Vue.component('links-other', {
+      props: ['label', 'link', 'icon'],
+      template: `
+        <a
+          :aria-label="label"
+          class="hiddenLink outline-color3 bg-invert2 hover:filter p-3 text-sm"
+          :href="link"
+          target="_blank"
+        >
+          <i aria-hidden="true" :class="icon"></i>
+          <span class="underline">Explore</span>
+        </a>
+      `
+    });
+
+    var app = new Vue({
+      el: '#app'
+    })
+
+
+    const dayOrNight = (() => {
+      // day or night (light or dark) mode controls
+      let prefersDay = true;
+
+      // these are the css variables that get switched
+      const properties = [
+        'bg', 'bg-o8', 'bg-invert', 'bg-img', 'color', 'color-o3',
+        'color2', 'color3', 'color4', 'color-invert'
+      ];
+
+      const style = getComputedStyle(document.body);
+
+      function findValues(mode) {
+        let values = {};
+        properties.forEach(property => {
+          values[property] = style.getPropertyValue(`--${mode}-${property}`)
+        });
+        return values;
+      }
+
+      const day = findValues('day');
+      const night = findValues('night');
+
+      function findPreference() {
+        return prefersDay
+      }
+
+      function toggle() {
+        prefersDay = !prefersDay;
+
+        const elm = document.documentElement;
+        const newStyles = prefersDay ? day : night;
+        const icon = document.querySelector('#dayOrNight');
+
+        if (prefersDay) {
+          icon.classList.add('day');
+          icon.classList.remove('night');
+        } else {
+          icon.classList.remove('day');
+          icon.classList.add('night');
+        }
+
+        properties.forEach(property => {
+          // for each property overwrite the day styles
+          elm.style.setProperty(`--day-${property}`, newStyles[property]);
+        });
+      }
+
+      return { toggle, findPreference }
+    })();
+
+
+    const ui = (() => {
+      // script for mobile hides title (my name) to make more room,
+      //// once user has interacted with nav
+      let intraLinks = Array.from(document.querySelectorAll('nav a'));
+      let intro = Array.from(document.querySelectorAll('#intro a'));
+      let about = Array.from(document.querySelectorAll('#about a'));
+
+      let allLinks = intraLinks.concat(intro, about);
+
+      if (localStorage.prefersDay === 'false') {
+        const oldTime = document.documentElement.style.getPropertyValue('--transition-time');
+        document.documentElement.style.setProperty('--transition-time', 0)
+        dayOrNight.toggle();
+        window.setTimeout(() => {
+          document.documentElement.style.setProperty('--transition-time', oldTime)
+        }, 19)
+      }
+
+      if (
+        dayOrNight.findPreference() === 'day' &&
+        getComputedStyle(document.documentElement).
+          getPropertyValue('content') === 'dark'
+      ) {
+        dayOrNight.toggle();
+      }
+
+      function storePreferences() {
+        localStorage.setItem('prefersDay', dayOrNight.findPreference());
+      }
+
+      const musicObserver = new IntersectionObserver(showBottomBar, { threshold: .4 });
+      musicObserver.observe(document.querySelector('#music'));
+
+      function showBottomBar(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            document.querySelector('#bottomBar').classList.remove('hide-bottomBar');
+          }
+        })
+      }
+
+      function hideBottomBar() {
+        document.querySelector('#bottomBar').classList.add('hide-bottomBar');
+        musicObserver.disconnect();
+      }
+
+      // reveal portfolio items when tabbed into
+      let hiddenLinks = document.querySelectorAll('.hiddenLink');
+      hiddenLinks.forEach(elem => {
+        elem.addEventListener('focus', e => {
+          e.target.closest('.hiddenLinkWrapper').style.opacity = 1;
+        })
+        elem.addEventListener('blur', e => {
+          e.target.closest('.hiddenLinkWrapper').style.opacity = 0;
+        })
+      });
+
+      // EVENT LISTENERS
+      allLinks.forEach(elem => {
+        elem.addEventListener('click', () => {
+          document.querySelector('h1').classList.add('hidden');
+        });
+      });
+
+      document.querySelector('#bottomBar button')
+        .addEventListener('click', hideBottomBar);
+
+      document.querySelector('#darkModeToggle')
+        .addEventListener('click', dayOrNight.toggle );
+
+      window.addEventListener('unload', storePreferences);
+
+    })();
+  </script>
+
+</body>
+</html>
