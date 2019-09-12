@@ -369,13 +369,13 @@
             const iframe = document.querySelector('iframe');
             iframe.src = iframe.getAttribute('data-src');
             document.querySelector('#bottomBar').classList.remove('hide-bottomBar');
+            musicObserver.disconnect();
           }
         })
       }
 
       function hideBottomBar() {
-        document.querySelector('#bottomBar').classList.add('hide-bottomBar');
-        musicObserver.disconnect();
+        document.querySelector('#bottomBar').remove();
       }
 
       // reveal portfolio items when tabbed into
