@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --day-bg: rgba(250, 250, 250, 1);
   --day-bg-o8: rgba(250, 250, 250, 0.8);
@@ -31,7 +35,19 @@
 html {
   font-family: 'Abel', sans-serif;
   font-size: 130%;
+  scroll-behavior: smooth;
 }
+
+header {top: -2.25rem}
+
+button:focus:not(:focus-visible) {outline: none;}
+a:focus, button:focus {
+  outline-offset: 2px; 
+  outline-style: dotted;
+  outline-width: 2px;
+}
+
+svg * {stroke: currentColor}
 
 .grid {
   display: grid;
@@ -45,7 +61,7 @@ html {
 .grid div:nth-of-type(even) {
   grid-column: 3 / span 1;
 }
-.grid h2 {
+.grid h2, .grid .heading {
   grid-column: 2 / span 2;
 }
 .gap-md {
@@ -162,8 +178,7 @@ html {
 /* object oriented CSS */
 /* ******************* */
 @keyframes glow {
-  from {filter: drop-shadow(0 0 0px currentColor);}
-  to {filter: drop-shadow(0 0 3px currentColor);}
+  to {box-shadow: 0px 0px 4px currentColor;}
 }
 #dayOrNight {
   transition: all var(--transition-time);
@@ -174,6 +189,9 @@ html {
   color: orange;
   background-color: yellow;
 }
+@keyframes twinkle {
+  to {transform: scale(1.01);}
+}
 .night {
   background-color: black;
   border-right: 5px solid white;
@@ -181,12 +199,12 @@ html {
 }
 .night::after {
   content: '★';
-  animation: glow 1.5s alternate infinite ease-in-out;
+  animation: twinkle 1.5s alternate infinite ease-in-out;
   font-size: 0.15em;
   color: white;
   transform: scale(0.8);
   position: absolute;
-  top: -8px;
+  top: -1rem;
   left: -8px;
   box-shadow: 5px -2px 22px -4px white;
 }
