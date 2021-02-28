@@ -47,7 +47,8 @@ a:focus, button:focus {
   outline-width: 2px;
 }
 
-svg * {stroke: currentColor}
+.stroke-currentColor * {stroke: currentColor}
+.fill-currentColor * {fill: currentColor}
 
 .grid {
   display: grid;
