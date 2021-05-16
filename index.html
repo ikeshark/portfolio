@@ -3,21 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="9kJZzXb2iBxy8ie7PqdYu0fgnzeJ7Qt0aPOIllboEOI" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="Description" content="Michael Shank’s code and music portfolio">
+
   <title>Michael Snyder Shank</title>
+
+  <meta name="google-site-verification" content="9kJZzXb2iBxy8ie7PqdYu0fgnzeJ7Qt0aPOIllboEOI" />
+  <meta name="Description" content="Michael Shank’s code and music portfolio">
+  <meta property="og:title" content="Michael Snyder Shank">
+  <meta property="og:description" content="Michael Shank’s code and music portfolio">
+  <meta property="og:image" content="img/og-img.png">
+  <meta property="og:image:alt" content="Hi, I'm Michael Snyder Shank I’m a web developer and a musician.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://ikeshark.github.io/portfolio/">
+  <link rel="canonical" href="https://ikeshark.github.io/portfolio/">
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Barrio&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.min.css">
 
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+
+  <style>
+    .bg-black {background-color: #000;}
+    .bg-white {background-color: #fff;}
+  </style>
 </head>
 
 <body class="color">
 
-  <header class="w-full sticky md:fixed md:top-0 flex flex-wrap items-center text-center p-2 bg z-10 shadow-b-color-o3">
+  <header class="w-full sticky md:fixed md:top-0 flex flex-wrap items-center text-center p-2 bg-white z-10 shadow-b-color-o3">
     <h1 id="darkModeToggle" class="md:block relative font-sans text-2xl hover:animation-underline hover:color4 w-full md:w-auto">
       Michael <span class="hidden md:inline">Snyder</span> Shank
       <button
@@ -401,13 +417,18 @@
         const elm = document.documentElement;
         const newStyles = prefersDay ? day : night;
         const icon = document.querySelector('#dayOrNight');
+        const header = document.querySelector('header');
 
         if (prefersDay) {
           icon.classList.add('day');
           icon.classList.remove('night');
+          header.classList.remove('bg-black');
+          header.classList.add('bg-white');
         } else {
           icon.classList.remove('day');
           icon.classList.add('night');
+          header.classList.add('bg-black');
+          header.classList.remove('bg-white');
         }
 
         properties.forEach(property => {
